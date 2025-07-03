@@ -1,0 +1,196 @@
+/* Add your CSS here to style your father's day page */
+/* General Reset and Base Styles */
+
+#wrapper {
+    animation: pageSpin 5s linear infinite;
+    transform-origin: center;
+}
+
+@keyframes pageSpin {
+    0%   { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f2f2f2;
+    color: #333;
+    line-height: 1.6;
+}
+
+#wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header and Navigation */
+header {
+    background-color: #35424a;
+    padding: 10px 0;
+    font-size: 40px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+nav ul li:hover {
+    color: #f7c08a;
+}
+
+/* Main Content */
+main h1 {
+    text-align: center;
+    font-size: 4em;
+    margin: 20px 0;
+    color: #35424a;
+}
+main h1:hover {
+    animation: explode 2s forwards;
+    cursor: pointer;
+}
+/* Section Styling */
+section {
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: #e9ecef;
+    border-left: 5px solid #35424a;
+    border-radius: 5px;
+}
+
+section h2 {
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+    background-color: #35424a;
+    color: #fff;
+    border-radius: 0 0 5px 5px;
+}
+
+/* Spinning image */
+main img {
+    animation: spinny 5s linear infinite;
+    border: 5px dashed #f7c08a;
+    padding: 10px;
+    background-color: #fffbe6;
+    transform-origin: center;
+    width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto 30px auto;
+    border-radius: 10px;
+}
+
+@keyframes spinny {
+    0% { transform: rotate(0deg) scale(1); }
+    50% { transform: rotate(180deg) scale(1.1); }
+    100% { transform: rotate(360deg) scale(1); }
+}
+
+/* Bouncy nav items */
+nav ul li {
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* Wiggly section headers */
+section h2 {
+    display: inline-block;
+    animation: wiggle 1.5s infinite;
+    transform-origin: center;
+}
+
+@keyframes wiggle {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(3deg); }
+    50% { transform: rotate(-3deg); }
+    75% { transform: rotate(3deg); }
+    100% { transform: rotate(0deg); }
+}
+
+/* Disco background effect on body */
+body {
+    animation: colorShift 10s infinite alternate;
+}
+
+@keyframes colorShift {
+    0% { background-color: #f2f2f2; }
+    25% { background-color: #ffe0e0; }
+    50% { background-color: #e0ffe0; }
+    75% { background-color: #e0e0ff; }
+    100% { background-color: #ffffe0; }
+}
+
+/* Footer shake */
+footer {
+    animation: shake 1s infinite alternate;
+}
+
+@keyframes shake {
+    0% { transform: rotate(-1deg); }
+    100% { transform: rotate(1deg); }
+}
+
+@keyframes explode {
+    0% { transform: scale(1) rotate(0deg); }
+    50% { transform: scale(2) rotate(180deg); }
+    100% { transform: scale(0.5) rotate(360deg); }
+}
+
+/* RAINBOW FLASH PARTY BACKGROUND 🌈⚡ */
+body {
+    animation: rainbowFlash 10s infinite linear;
+    background-size: 400% 400%;
+    background-image: linear-gradient(45deg,
+        red, orange, yellow, green, blue, indigo, violet, red);
+    transition: all 0.2s ease-in-out;
+}
+
+@keyframes rainbowFlash {
+    0% { background-position: 0% 50%; filter: brightness(1); }
+    25% { background-position: 50% 50%; filter: brightness(1.4); }
+    50% { background-position: 100% 50%; filter: brightness(0.7); }
+    75% { background-position: 50% 50%; filter: brightness(1.6); }
+    100% { background-position: 0% 50%; filter: brightness(1); }
+}
+
+section {
+    border: 5px dashed;
+    animation: borderFlash 0.5s infinite;
+}
+
+@keyframes borderFlash {
+    0%   { border-color: red; }
+    25%  { border-color: yellow; }
+    50%  { border-color: lime; }
+    75%  { border-color: cyan; }
+    100% { border-color: magenta; }
+}

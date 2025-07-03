@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Russell M. Nelson</title>
+  
+  <style>
+    /* Insert styles here, this is called an internal stylesheet  */
+    body {
+      background-color: #FFECD7;
+      font-family: Helvetica, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .card {
+      background-color: #008DB1;
+      border: 5px solid #004E63;
+      border-radius: 20px;
+      text-align: center;
+      width: 400px;
+      padding: 20px;
+    }
+
+
+    .title {
+      color: #FFFFFE;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .subtitle {
+      color: #91E4FB;
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    .profile-img {
+     width: 250px;
+    height: auto;
+    border: 5px solid white;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+    }
+
+    .profile-img:hover {
+    transform: scale(1.05);
+    }
+
+    .list {
+      list-style-type: none;
+      padding: 0;
+      color: #FFFFFE;
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    .list li:hover {
+  color: #FFD783;
+  transform: scale(1.05);
+  transition: 0.2s ease-in-out;
+}
+
+    .quote {
+      color: #FFD783;
+      font-family: "Brush Script MT", "Nanum Brush Script", cursive;
+      font-size: 18px;
+      padding: 0 10px;
+      transition: all 0.3s ease;
+    }
+
+    .quote:hover {
+  color: #fff;
+  transform: scale(1.05);
+    }
+
+    a {
+      color: #91E4FB;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+    <!-- This is the over all card -->
+  <div class="card">
+    <div class="title">Russell M. Nelson</div>
+    <div class="subtitle">
+      17th President of the Church of Jesus<br>
+      Christ of Latter-day Saints<br>
+      <a href="https://churchofjesuschrist.org" target="_blank">churchofjesuschrist.org</a>
+    </div>
+    <!-- This is the picture -->
+    <img src="images/russell_nelson.png" alt="Russell M. Nelson" class="profile-img">
+    <!-- This is the bulit pints stuff -->
+    <ul class="list">
+      <li>Born: Sep 9, 1924</li>
+      <li>Apostle: Apr 7, 1984</li>
+      <li>Prophet: Jan 14, 2018</li>
+    </ul>
+    <div class="quote">
+      "I urge you to devote time each week —<br>
+      for the rest of your life — to increase<br>
+      your understanding of the Atonement of<br>
+      Jesus Christ."
+    </div>
+  </div>
+</body>
+</html>

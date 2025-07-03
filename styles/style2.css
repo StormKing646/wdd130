@@ -1,0 +1,108 @@
+body {
+    background: ivory;
+    background-image: url("../images/");
+    border-radius: 10px;
+    background-repeat: repeat;
+}
+
+#wrapper {
+    background: skyblue;
+    width: 900px;
+    margin: auto;
+    border-radius: 10px;
+    display: grid;
+}
+
+header{
+    background-image: url("../images/ocean.png");
+    background-position: 0 294px;
+
+}
+
+header img {
+width: 140px;
+}
+
+header h1 {
+    display: inline;
+    font-size: 3em;
+    float: right;
+    color: antiquewhite;
+    padding: 30px;
+}
+
+nav {
+    background: limegreen;
+    width: 100%;
+    border: 4px darkgreen;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-evenly;
+    height: 60px;
+    border-radius: 10px;
+}
+
+nav a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.5em;
+    color: azure;
+    padding: 10px 30px;
+    border-radius: 10px;
+
+}
+
+nav a:hover {
+    background: #2e2e2e;
+    text-shadow: 4px 4px 2px #384838;
+}
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+section{
+    border: 3px solid #2e2e2e;
+    background: wheat;
+    padding: 0 30px;
+    margin: 20px 14px;
+}
+
+table{
+    grid-column: 1 / 4;
+}
+table.blueTable {
+    border-collapse: collapse;
+  }
+  table.blueTable td, table.blueTable th {
+    border: 1px solid #AAAAAA;
+    padding: 3px 2px;
+  }
+  table.blueTable tr:nth-child(even) {
+    background: #5EA4E2;
+  }
+  table.blueTable thead {
+    background: #2E7186;
+    background: -moz-linear-gradient(top, #6294a4 0%, #437f92 66%, #2E7186 100%);
+    background: -webkit-linear-gradient(top, #6294a4 0%, #437f92 66%, #2E7186 100%);
+    background: linear-gradient(to bottom, #6294a4 0%, #437f92 66%, #2E7186 100%);
+  }
+  table.blueTable thead th {
+    font-size: 15px;
+    font-weight: bold;
+  }
+  table.blueTable tfoot td {
+    font-size: 14px;
+  }
+  table.blueTable tfoot .links {
+    text-align: right;
+  }
+  table.blueTable tfoot .links a{
+    display: inline-block;
+    background: #1C6EA4;
+    color: #FFFFFF;
+    padding: 2px 8px;
+    border-radius: 5px;
+  }

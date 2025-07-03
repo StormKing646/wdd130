@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Apostles Spotlights</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #E8ECED;
+    }
+
+    .background {
+      position: relative;
+      background-image: url("images/starry-background.webp"); /* replace with your actual starry bg */
+      background-size: cover;
+      background-position: center;
+      min-height: 100vh;
+      padding: 40px 20px;
+      text-align: center;
+      color: white;
+    }
+
+    .background::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url("images/christus.webp");
+      background-size: auto 95%;
+      background-repeat: no-repeat;
+      background-position: left bottom;
+      z-index: 0;
+      opacity: 0.9;
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    h2 {
+      margin-top: 20px;
+      font-size: 2em;
+      text-shadow: 2px 2px 4px black;
+    }
+
+    .apostle-group {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin: 20px 0;
+    }
+
+    .apostle {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    }
+  </style>
+</head>
+<body>
+  <div class="background">
+    <div class="content">
+      <h2>First Presidency</h2>
+      <div class="apostle-group">
+        <img src="images/oaks.webp" alt="Oaks" class="apostle" />
+        <img src="images/nelson.webp" alt="Nelson" class="apostle" />
+        <img src="images/eyring.webp" alt="Eyring" class="apostle" />
+      </div>
+
+      <h2>Quorum of the Twelve Apostles</h2>
+      <div class="apostle-group">
+        <img src="images/holland.webp" alt="Holland" class="apostle" />
+        <img src="images/uchtdorf.webp" alt="Uchtdorf" class="apostle" />
+        <img src="images/bednar.webp" alt="Bednar" class="apostle" />
+        <img src="images/cook.webp" alt="Cook" class="apostle" />
+        <img src="images/christofferson.webp" alt="Christofferson" class="apostle" />
+        <img src="images/anderson.webp" alt="Anderson" class="apostle" />
+        <img src="images/rasband.webp" alt="Rasband" class="apostle" />
+        <img src="images/renlund.webp" alt="Renlund" class="apostle" />
+        <img src="images/soares.webp" alt="Soares" class="apostle" />
+        <img src="images/gong.webp" alt="Gong" class="apostle" />
+        <img src="images/stevenson.webp" alt="Stevenson" class="apostle" />
+        <img src="images/kearon.webp" alt="Kearon" class="apostle" />
+      </div>
+    </div>
+  </div>
+</body>
+</html>

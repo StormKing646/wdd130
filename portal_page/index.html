@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Spencer Butler's Portal Page</title>
+  <link rel="stylesheet" href="the_style/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="content">
+    <!-- Header -->
+    <header class="site-header">
+      <div class="logo"><img src="pics/pineapple_logo.png" alt="logo of pineapple"></div>
+      <div class="font-info"></div>
+      <!-- <div id="logo_of_apple"><img src="pics/pineapple_logo.png" alt="logo of pineapple"></div> -->
+        
+      
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="../wwr/index.html" target="_blank">WWR</a>
+        <a href="../ice/index.html">ICE</a>
+        <a href="aboutme.html">About Me</a>
+        
+        
+      </nav>
+    </header>
+
+    <!-- Main Section -->
+    <main class="main-section">
+      <!-- Top section with image and heading -->
+      <section class="top-section">
+        <div class="top-image">
+          <img src="pics/spencer_temp.jpg" alt="Picture of Spencer">
+        </div>
+        <div class="top-text">
+          <h1>This is me</h1>
+          <p>Hey, I'm Spencer Butler. I've always been drawn to anything with wires, screens, or code—if it runs on tech, I want to understand it. When I’m not deep into a project or gaming with friends, I’m out on the lake wakesurfing, trying to do tricks. I’ve got a weakness for K-pop, a bookshelf full of audiobooks, and I love spending quality time with friends, family, and a cat or two. I’m always looking for something new to learn and live life to the fullest!</p>
+          <div id="contact_box">
+          <a class="contact-button" href="#">Contact Me</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Bottom section with text then image -->
+      <section class="bottom-section">
+        <div class="bottom-text">
+          <h1>My family</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+
+Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.</p>
+        </div>
+        <div class="bottom-image">
+          <img src="pics/family.JPEG" alt="Family picture">
+        </div>
+        <!-- THe EpiC Table -->
+        <div class="the_table">
+          <table>
+            <thead>
+              <tr>
+                <th>Anime Title</th>
+                <th>Brief Description</th>
+                <th>Where to Watch</th>
+                <th>Score</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Solo Leveling</td>
+                <td>Genre: Action, Fantasy, Adventure
+In a world where portals to monster-filled dungeons appear, hunters fight to protect humanity. Sung Jin-Woo, the weakest hunter of all, is left for dead on a mission but awakens with a mysterious power that lets him "level up" like a video game. He begins an epic journey to become the strongest hunter and uncover dark secrets behind the dungeons.</td>
+                <td>Crunchyroll.com</td>
+                <td>10/10</td>
+              </tr>
+              <tr>
+                <td>Danganronpa</td>
+                <td>Genre: Mystery, Psychological Thriller, Horror
+A group of elite high school students are trapped in a school by a sadistic, talking bear named Monokuma. To escape, a student must murder another and get away with it. After each killing, the group must hold a trial to find the killer—or everyone else dies. Tension rises as trust breaks and the twisted game unfolds.</td>
+                <td>Crunchyroll.com</td>
+                <td>10/10</td>
+              </tr>
+              <tr>
+                <td>Darwin's Game</td>
+                <td>Genre: Action, Supernatural, Survival
+Kaname Sudou unknowingly accepts an invitation to a mysterious mobile game called Darwin’s Game, only to find himself pulled into deadly battles where players fight using special powers called "Sigils." With no way out, Kaname must learn to survive, form alliances, and uncover the game's dark origins.</td>
+                <td>Crunchyroll.com</td>
+                <td>10/10</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  
+<!-- This is the form Stuff -->
+  <div class="contact-form-overlay" id="contactForm">
+  <div class="contact-form-container">
+    <span class="close-x" id="closeX">&times;</span>
+
+    <h2>Contact Me</h2>
+    <form>
+      <label for="first">First Name:</label>
+      <input type="text" id="first" name="first" required>
+
+      <label for="last">Last Name:</label>
+      <input type="text" id="last" name="last" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label>Favorite Color:</label>
+      <div class="radio-group">
+        <label><input type="radio" name="color" value="Red" required> Red</label>
+        <label><input type="radio" name="color" value="Blue"> Blue</label>
+        <label><input type="radio" name="color" value="Black"> Black</label>
+      </div>
+
+      <button type="submit">Submit</button>
+      <button type="button" id="closeForm">Close</button>
+    </form>
+  </div>
+</div>
+
+
+<!-- This is the JavaScript stuff -->
+<script>
+  const contactBtn = document.querySelector('.contact-button');
+  const contactForm = document.getElementById('contactForm');
+  const closeBtn = document.getElementById('closeForm');
+  const closeX = document.getElementById('closeX');
+
+closeX.addEventListener('click', () => {
+  contactForm.classList.remove('show');
+});
+
+
+  contactBtn.addEventListener('click', () => {
+    contactForm.classList.add('show');
+  });
+
+  closeBtn.addEventListener('click', () => {
+    contactForm.classList.remove('show');
+  });
+</script>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>Copyright © Spencer Butler</p>
+  </footer>
+</body>
+</html>
